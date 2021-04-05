@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class SpeakerWithBird : Interactable
+namespace Assets.Script.Clickable.Interactable.Objects
 {
-    public override void Interact()
+    public class SpeakerWithBird : Interactable
     {
-        Debug.Log("...Interacting with Speaker");
-    }
+        public override void Interact()
+        {
+            Debug.Log("...Interacting with Speaker");
+        }
 
-    public override void Look()
-    {
-        Debug.Log("Looks like a Speaker with an Bird next to it");
+        public override void Look()
+        {
+            Debug.Log("Looks like a Speaker with an Bird next to it");
+        }
     }
 }

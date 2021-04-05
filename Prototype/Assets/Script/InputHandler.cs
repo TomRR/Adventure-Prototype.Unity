@@ -1,37 +1,38 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class InputHandler : MonoBehaviour
+namespace Assets.Script
 {
-    private Player _player;
-
-    private void Awake()
+    public class InputHandler : MonoBehaviour
     {
-        _player = GetComponent<Player>();
-        Debug.Log(_player);
-    }
+        private Player.Player _player;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
+        private void Awake()
         {
-            var clickable = Helper.GetClickable();
-            _player.InteractWith(clickable);
+            _player = GetComponent<Player.Player>();
+            Debug.Log(_player);
         }
-        if (Input.GetMouseButtonDown(1)) 
+
+        // Update is called once per frame
+        void Update()
         {
-            var clickable = Helper.GetClickable();
-            _player.LookAt(clickable);
+            if (Input.GetMouseButtonDown(0))
+            {
+                var clickable = Helper.GetClickable();
+                _player.InteractWith(clickable);
+            }
+            if (Input.GetMouseButtonDown(1)) 
+            {
+                var clickable = Helper.GetClickable();
+                _player.LookAt(clickable);
+            }
+            // if (Input.GetKeyDown("i") || Input.mouseScrollDelta.y != 0)
+            // {
+            //     UIController.ToggleInventory();
+            // }        
+            // if (Input.GetKeyDown("t") || Input.mouseScrollDelta.y != 0)
+            // {
+            //     UIController.ToggleMainMenu();
+            // }
         }
-        // if (Input.GetKeyDown("i") || Input.mouseScrollDelta.y != 0)
-        // {
-        //     UIController.ToggleInventory();
-        // }        
-        // if (Input.GetKeyDown("t") || Input.mouseScrollDelta.y != 0)
-        // {
-        //     UIController.ToggleMainMenu();
-        // }
     }
 }

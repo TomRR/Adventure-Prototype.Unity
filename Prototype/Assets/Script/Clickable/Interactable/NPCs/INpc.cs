@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface INpc
+﻿namespace Assets.Script.Clickable.Interactable.NPCs
 {
-    void ToggleDialogBox();
+    public interface INpc
+    {
+        void ToggleDialogBox();
+    }
 }

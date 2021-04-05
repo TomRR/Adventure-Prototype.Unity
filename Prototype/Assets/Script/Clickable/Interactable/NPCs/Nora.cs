@@ -1,21 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Nora : Interactable, INpc
+namespace Assets.Script.Clickable.Interactable.NPCs
 {
-    public override void Interact()
+    public class Nora : Interactable, INpc
     {
-        Debug.Log("...Talking with Nora");
-    }
+        public override void Interact()
+        {
+            ToggleDialogBox();
+            Debug.Log("...Talking with Nora");
+        }
 
-    public override void Look()
-    {
-        Debug.Log("Looks like a Girl with blue Hair");
-    }
+        public override void Look()
+        {
+            Debug.Log("Looks like a Girl with blue Hair");
+        }
 
-    public void ToggleDialogBox()
-    {
-        throw new System.NotImplementedException();
+        public void ToggleDialogBox()
+        {
+            Debug.Log("Toggles Dialogbox - Nora");
+        }
     }
 }

@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class BarDoor : Interactable
+namespace Assets.Script.Clickable.Interactable.Objects
 {
-    public override void Interact()
+    public class BarDoor : Interactable
     {
-        Debug.Log("...Interacting with the Bar Door.");
-    }
+        public override void Interact()
+        {
+            Debug.Log("...Interacting with the Bar Door.");
+        }
 
-    public override void Look()
-    {
-        Debug.Log("Looks like a Door for the Bar");
+        public override void Look()
+        {
+            Debug.Log("Looks like a Door for the Bar");
+        }
     }
 }

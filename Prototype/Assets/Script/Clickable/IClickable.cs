@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public interface IClickable
+namespace Assets.Script.Clickable
 {
-    Vector2 GetTargetPosition { get; }
+    public interface IClickable
+    {
+        Vector2 GetTargetPosition { get; }
+    }
 }

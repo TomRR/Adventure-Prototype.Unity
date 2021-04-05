@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public static class UIController
+namespace Assets.Script
 {
-    public static void ToggleInventory()
+    public static class UIController
     {
-        Debug.Log("Toggle Inventory");
-    }
+        public static void ToggleInventory()
+        {
+            Debug.Log("Toggle Inventory");
+        }
 
-    public static void ToggleMainMenu()
-    {
-        Debug.Log("Toggle Main Menu");
+        public static void ToggleMainMenu()
+        {
+            Debug.Log("Toggle Main Menu");
+        }
     }
 }

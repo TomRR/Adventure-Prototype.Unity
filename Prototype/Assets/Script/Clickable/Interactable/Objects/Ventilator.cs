@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Ventilator : Interactable
+namespace Assets.Script.Clickable.Interactable.Objects
 {
-    public override void Interact()
+    public class Ventilator : Interactable
     {
-        Debug.Log("BUEUEUEUEUEHHHE...");
-    }
+        public override void Interact()
+        {
+            Debug.Log("BUEUEUEUEUEHHHE...");
+        }
 
-    public override void Look()
-    {
-        Debug.Log("Looks like a old Ventilator");
+        public override void Look()
+        {
+            Debug.Log("Looks like a old Ventilator");
+        }
     }
 }

@@ -1,21 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Tom : Interactable, INpc
+namespace Assets.Script.Clickable.Interactable.NPCs
 {
-    public override void Interact()
+    public class Tom : Interactable, INpc
     {
-        Debug.Log("...Talking with Tom.");
-    }
+        public override void Interact()
+        {
+            ToggleDialogBox();
+            Debug.Log("...Talking with Tom.");
+        }
 
-    public override void Look()
-    {
-        Debug.Log("Looks like a Dude with Cap");
-    }
+        public override void Look()
+        {
+            Debug.Log("Looks like a Dude with Cap");
+        }
 
-    public void ToggleDialogBox()
-    {
-        throw new System.NotImplementedException();
+        public void ToggleDialogBox()
+        {
+            Debug.Log("Toggles Dialogbox - Tom");
+        }
     }
 }

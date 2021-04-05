@@ -1,8 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Ground : MonoBehaviour
+namespace Assets.Script.Clickable
 {
-    public Vector2 GetTargetPosition => Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    public class Ground : MonoBehaviour, IClickable
+    {
+        // public Vector2 GetTargetPosition => Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        public Vector2 GetTargetPosition => Helper.Get2DWorldMousePosition();
+    }
 }

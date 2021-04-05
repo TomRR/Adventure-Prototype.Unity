@@ -195,13 +195,21 @@ PolygonCollider2D:
       - {x: 0.23365307, y: -6.669186}
       - {x: -2.5868874, y: -7.563546}
       - {x: -4.7163014, y: -7.403308}
-      - {x: -5.671669, y: -8.225493}
-      - {x: -8.210251, y: -8.156113}
-      - {x: -10.38772, y: -6.97705}
-      - {x: -13.810307, y: -6.8236985}
+      - {x: -5.619879, y: -7.4596744}
+      - {x: -5.4835978, y: -8.079216}
+      - {x: -8.210251, y: -8.135216}
+      - {x: -8.035495, y: -7.702606}
+      - {x: -10.649125, y: -7.149723}
+      - {x: -10.693296, y: -6.0973573}
+      - {x: -11.34897, y: -5.7650394}
+      - {x: -11.36639, y: -6.9800396}
+      - {x: -11.929825, y: -6.9816623}
+      - {x: -11.92221, y: -5.828778}
+      - {x: -13.870562, y: -5.618578}
       - {x: -13.870813, y: -8.12538}
       - {x: -15.079724, y: -8.548321}
-      - {x: -27.558258, y: -9.926539}
+      - {x: -31.400787, y: -10.166696}
+      - {x: -31.118534, y: -10.729535}
       - {x: -27.683567, y: -10.567438}
       - {x: -7.3967185, y: -10.570497}
       - {x: -0.3160547, y: -10.329473}
@@ -519,8 +527,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794503463}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.58, y: -0.74, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -537,7 +545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88ba10daf2679c46a57c3578bb8aec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
 --- !u!114 &794503467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,7 +928,7 @@ GameObject:
   - component: {fileID: 1281781921}
   - component: {fileID: 1281781920}
   m_Layer: 0
-  m_Name: TelefonFrei
+  m_Name: Telefon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1189,7 +1196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ab04ecde4cefa4aa69230ac673ccdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetPosition: {x: 20, y: -6}
+  _targetPosition: {x: 11, y: 0.5}
 --- !u!61 &1883399146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1229,7 +1236,7 @@ GameObject:
   - component: {fileID: 1993271045}
   - component: {fileID: 1993271044}
   m_Layer: 0
-  m_Name: VentilatorFrei
+  m_Name: Ventilator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
