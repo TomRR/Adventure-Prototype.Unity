@@ -4,15 +4,5 @@ using UnityEngine;
 
 public class Ground : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Vector2 GetTargetPosition => Helper.Get2DWorldMousePosition();
 }
