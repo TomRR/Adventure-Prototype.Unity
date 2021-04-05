@@ -25,13 +25,13 @@ public class InputHandler : MonoBehaviour
             var clickable = Helper.GetClickable();
             _player.LookAt(clickable);
         }
-        if (Input.GetKeyDown("i") || Input.mouseScrollDelta.y != 0)
-        {
-            UIController.ToggleInventory();
-        }        
-        if (Input.GetKeyDown("t") || Input.mouseScrollDelta.y != 0)
-        {
-            UIController.ToggleMainMenu();
-        }
+        // if (Input.GetKeyDown("i") || Input.mouseScrollDelta.y != 0)
+        // {
+        //     UIController.ToggleInventory();
+        // }        
+        // if (Input.GetKeyDown("t") || Input.mouseScrollDelta.y != 0)
+        // {
+        //     UIController.ToggleMainMenu();
+        // }
     }
 }

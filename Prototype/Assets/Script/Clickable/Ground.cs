@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Ground : MonoBehaviour
 {
-    public Vector2 GetTargetPosition => Helper.Get2DWorldMousePosition();
+    public Vector2 GetTargetPosition => Camera.main.ScreenToWorldPoint(Input.mousePosition);
 }
